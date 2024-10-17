@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+</head>
+<body>
+    <div class="calc-body">
+        <div class="calc-screen">
+            <input type="text" id="screen">
+        </div>
+        <div class="buttons">
+            <button type="button" class="key-operate" onclick="clearDisplay()">AC</button>
+            <button type="button" class="numbers" onclick="buttonclick('7')">7</button>
+            <button type="button" class="numbers" onclick="buttonclick('8')">8</button>
+            <button type="button" class="numbers" onclick="buttonclick('9')">9</button>
+            <button type="button" class="key-operate" onclick="buttonclick('+')">+</button>
+            <button type="button" class="numbers" onclick="buttonclick('4')">4</button>
+            <button type="button" class="numbers" onclick="buttonclick('5')">5</button>
+            <button type="button" class="numbers" onclick="buttonclick('6')">6</button>
+            <button type="button" class="key-operate" onclick="buttonclick('-')">-</button>
+            <button type="button" class="numbers" onclick="buttonclick('3')">3</button>
+            <button type="button" class="numbers" onclick="buttonclick('2')">2</button>
+            <button type="button" class="numbers" onclick="buttonclick('1')">1</button>
+            <button type="button" class="key-operate" onclick="buttonclick('*')">x</button>
+            <button type="button" class="numbers" onclick="buttonclick('.')">.</button>
+            <button type="button" class="numbers" onclick="buttonclick('0')">0</button>
+            <button type="button" class="key-operate" id="equalOperator" onclick="equalClick('=')">=</button>
+            <button type="button" class="key-operate" onclick="buttonclick('/')">/</button>
+            
+        </div>
+    </div>
+    <script src="../../javascript/simple_calculator/calculator.js"></script>
+</body>
+</html>
